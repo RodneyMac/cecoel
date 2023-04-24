@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-1: Arial, Helvetica, sans-serif;
+  --font-2: Roboto, sans-serif;
+  --font-3: 'Playfair Display', sans-serif;
+  --color-black-1: #121212;
+  --color-black-2: #272626;
+  --color-gray-light: #69727d;
+  --color-gray-1: #43403e;
+  --color-gray-2: #43403ed9;
+  --color-primary-1: #2c446c;
+  --color-primary-2: #2f5aae;
+  --color-blue-light: #0499DB;
+  --color-blue: #06025f;
+  --color-white: #ffffff;
+}
+
+body {
+  background-color: var(--color-white);
+}
+
+/* Menu Header */
+
+.header-index {
+  display: none;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.w-text {
+  display: flex;
+  flex-direction: column;
+  /*margin: 4px 0;*/
+  /*padding: 0 15px;*/
+}
+
+.w-content {
+  float: right;
+  height: 25px;
+  width: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menulogo {
+  height: 3px;
+  width: 30px;
+  background-color: var(--color-black-2);
+}
+
+.menu {
+  width: 84%;
+  height: 100vh;
+  padding: 15px;
+  background-color: var(--color-primary-1);
+  transform: translateX(-500px);
+  transition: 0.5s;
+}
+
+.menu li {
+  list-style: none;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.showmenu {
+  transform: translateX(0);
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-family: var(--font-1);
+  font-size: 16px;
+  transition: font-weight 0.2s;
+}
+
+.menu li:hover {
+  border: 1px solid var(--color-white);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu li a:hover {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu {
+    width: 1280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-index {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .menu li a {
+    font-size: 16px;
+  }
+}
+
