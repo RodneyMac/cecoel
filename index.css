@@ -280,10 +280,6 @@ input:checked ~ nav .nav-list {
   }
 
   .section-2-btn {
-    padding: 4px 6px;
-    margin-top: 0;
-    font-size: 10px;
-    border: solid 1px var(--color-dark-blue);
     letter-spacing: 0;
   }
 
@@ -301,18 +297,17 @@ input:checked ~ nav .nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 200px 100px;
+  padding: 100px 100px;
   margin: auto;
 }
 
 .section-3-element {
   width: 100%;
-  max-width: 25%;
+  max-width: 187px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 100px 0 0;
   border-bottom: 1px solid var(--color-black-2);
 }
 
@@ -400,6 +395,24 @@ input:checked ~ nav .nav-list {
   .section-3-element {
     height: 190px;
   }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0.1, 0.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.disguise {
+  opacity: 0;
+}
+
+.animate {
+  animation: appear 1.3s ease;
 }
 
 /*---------------------------------------------------------------------------------------------*/
