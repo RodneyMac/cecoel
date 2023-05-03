@@ -348,7 +348,7 @@ li .nav-item {
 .section-4-parallax {
   width: 100%;
   max-width: 1140px;
-  background: rgba(0, 0, 0, 0.3) url(img/Nosotros.png);
+  background: rgba(0, 0, 0, 0.3) url(../img/Nosotros.png);
   background-size: cover;
   background-attachment: fixed;
   height: 794.88px;
@@ -426,7 +426,7 @@ li .nav-item {
 
 @media (max-width: 650px) {
   .section-4-parallax {
-    background-image: url(img/Nosotros.png);
+    background-image: url(../img/Nosotros.png);
     background-size: cover;
     background-position: center;
     background-attachment: inherit;
