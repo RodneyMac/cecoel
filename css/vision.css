@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap");
+
+:root {
+  --color-bg: #2c446c;
+  --color-white: #ffffff;
+  --color-blue-light: #0499db;
+  --color-black-2: #272626;
+  --color-gray-3: #7a7a7a;
+  --font-1: Roboto, sans-serif;
+  --font-2: Tahoma, sans-serif;
+}
+
+body {
+  width: 100% !important;
+  background-color: var(--color-bg) !important;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100% !important;
+  padding: 0 10%;
+  background-color: var(--color-black-2) !important;
+}
+
+.nav-logo {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+li .nav-item {
+  cursor: pointer;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  margin: 0 10px !important;
+  padding: 0 8px !important;
+}
+
+.nav-link {
+  transition: 0.4 ease;
+}
+
+.nav-link:hover {
+  color: var(--color-blue-light) !important;
+  cursor: pointer !important;
+}
+
+@media (max-width: 991px) {
+  .nav-item-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    border: none;
+    margin: 10px 10px;
+    text-align: center;
+  }
+}
+
+.vision-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision {
+  margin-top: 100px;
+}
+
+.vision,
+.mision,
+.objetivos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 171px;
+}
+
+.content-title {
+  color: var(--color-white);
+  font-family: var(--font-1);
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content-description {
+  color: var(--color-white);
+  font-family: var(--font-2);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 2em;
+  text-align: center;
+  padding: 0 15% 0 15%;
+}
+
+.content-description ul li {
+  display: list-item;
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+  .vision,
+  .mision,
+  .objetivos {
+    padding: 50px 20px;
+  }
+
+  .content-description {
+    padding: 0;
+  }
+}
+
+@media (max-width: 456px) {
+  .vision,
+  .mision,
+  .objetivos {
+    border-bottom: 1px solid var(--color-gray-3);
+  }
+}

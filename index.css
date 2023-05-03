@@ -13,8 +13,10 @@
   --color-gray-1: #43403e;
   --color-gray-2: #43403ed9;
   --color-gray-3: #7a7a7a;
+  --color-gray-4: #f4f4f4;
   --color-primary-1: #2c446c;
   --color-primary-2: #2f5aae;
+  --color-primary-3: #3b5998;
   --color-blue-light: #0499db;
   --color-blue: #06025f;
   --color-dark-blue: #02095b;
@@ -340,6 +342,8 @@ li .nav-item {
   width: 100%;
   max-width: 1140px;
   margin: auto;
+  /*position: relative;*/
+  /*z-index: -1;*/
 }
 
 .section-4-parallax {
@@ -569,7 +573,6 @@ footer {
 .footer-logo-date {
   width: 100%;
   max-width: 270px;
-  /*height: 238px;*/
   height: 210px;
   display: flex;
   flex-direction: column;
@@ -583,6 +586,7 @@ footer {
   font-family: var(--font-2);
   text-transform: uppercase;
   color: var(--color-blue-light);
+  margin-bottom: 10px;
 }
 
 .footer-container {
@@ -608,6 +612,11 @@ footer {
   color: var(--color-gray-3);
   font-family: var(--font-2);
   font-size: 18px;
+  transition: .5s ease;
+}
+
+.footer-text:hover {
+  color: var(--color-white);
 }
 
 .footer-subcontent-social {
@@ -622,6 +631,13 @@ footer {
   color: var(--color-blue-light);
   margin: 0 10px;
   cursor: pointer;
+  transition: transform 0.9s ease;
+}
+
+.iconify-facebook:hover,
+.iconify-twitter:hover {
+  color: var(--color-white);
+  transform: scale(1.1);
 }
 
 .footer-logo {
