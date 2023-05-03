@@ -5,7 +5,9 @@
   --color-white: #ffffff;
   --color-blue-light: #0499db;
   --color-black-2: #272626;
+  --color-gray-2: #43403ed9;
   --color-gray-3: #7a7a7a;
+  --color-light-gray: #bfbfbf;
   --font-1: Roboto, sans-serif;
   --font-2: Tahoma, sans-serif;
 }
@@ -67,4 +69,84 @@ li .nav-item {
   }
 }
 
-/* ---------- ---------- */
+/* ---------- US ---------- */
+
+.us {
+  margin-top: 100px;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.record {
+  width: 100%;
+  max-width: 570px;
+  height: 806.55px;
+}
+
+.us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 0 35px;
+}
+
+.us-header {
+  font-size: 45px;
+  font-family: var(--font-1);
+  color: var(--color-bg);
+  font-weight: bold;
+}
+
+.us-header-content {
+  font-size: 20px;
+  text-align: justify;
+  font-family: var(--font-2);
+  font-weight: 300;
+  line-height: 1.8em;
+  color: var(--color-gray-2);
+}
+
+/* ---------- US BOARD OF DIRECTORS ---------- */
+
+.us-board-of-directors {
+  display: flex;
+  flex-direction: column;
+}
+
+.us-board-of-directors-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 100px 0;
+}
+
+.fa-user-tie {
+  color: var(--color-bg);
+  margin: 0 0 30px;
+}
+
+.us-board-of-directors-header-title {
+  color: var(--color-light-gray);
+  font-size: 15px;
+  font-family: var(--font-1);
+  text-transform: uppercase;
+}
+
+.us-board-of-directors-header-subtitle {
+  font-size: 45px;
+  font-weight: 600;
+  font-family: var(--font-1);
+  color: var(--color-bg);
+  margin-bottom: 100px;
+}
+
+.board-of-directors-img {
+  padding: 10px;
+}
+
+/* ---------- US STAFF ---------- */
+/* ---------- US AFFILIATES ---------- */
+
