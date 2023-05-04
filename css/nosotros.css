@@ -177,5 +177,128 @@ li .nav-item {
 }
 
 /* ---------- US STAFF ---------- */
+
+.us-staff {
+  display: flex;
+  flex-direction: column;
+}
+
+.us-staff-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 100px 0;
+}
+
+.fa-users {
+  color: var(--color-bg);
+  margin: 0 0 30px;
+}
+
+.us-staff-title {
+  color: var(--color-light-gray);
+  font-size: 15px;
+  font-family: var(--font-1);
+  text-transform: uppercase;
+}
+
+.us-staff-subtitle {
+  font-size: 45px;
+  font-weight: 600;
+  font-family: var(--font-1);
+  color: var(--color-bg);
+  margin-bottom: 100px;
+}
+
+@media (max-width: 300px) {
+  .us-staff-img {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .us-staff-subtitle {
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
+}
+
 /* ---------- US AFFILIATES ---------- */
 
+.us-affiliates {
+  display: flex;
+  flex-direction: column;
+}
+
+.us-affiliates-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 0 0;
+}
+
+.fa-users-gear {
+  color: var(--color-bg);
+  margin: 0 0 30px;
+}
+
+.us-affiliates-title {
+  color: var(--color-light-gray);
+  font-size: 15px;
+  font-family: var(--font-1);
+  text-transform: uppercase;
+}
+
+.us-affiliates-subtitle {
+  font-size: 45px;
+  font-weight: 600;
+  font-family: var(--font-1);
+  color: var(--color-bg);
+  margin-bottom: 100px;
+}
+
+.us-affiliate-description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.us-affiliate-list {
+  width: 100%;
+  max-width: 359.98px;
+  padding: 0 0 0 15px;
+  margin: 30px 0;
+}
+
+.us-affiliate-list-item {
+  color: var(--color-gray-3);
+  font-size: 16px;
+  font-family: var(--font-1);
+  margin: 10px 0 0;
+}
+
+@media (max-width: 768px) {
+  .us-affiliates-subtitle {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+
+  .us-affiliate-list {
+    padding: 0 0 0 20px;
+  }
+
+  .us-affiliate-list-item {
+    font-size: 15px;
+  }
+
+  .us-affiliate-description {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .us-affiliate-list {
+    padding: 0 0 0 30px;
+  }
+}
