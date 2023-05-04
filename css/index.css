@@ -32,9 +32,6 @@ body {
 /* ---------- NAVBAR ---------- */
 
 nav {
-  position: fixed !important;
-  top: 0 !important;
-  width: 100% !important;
   padding: 0 10%;
   background-color: var(--color-black-2) !important;
 }
@@ -358,7 +355,6 @@ li .nav-item {
   flex-wrap: wrap;
   background-blend-mode: darken;
   opacity: 0.9;
-  z-index: -1;
 }
 
 .section-4-box {

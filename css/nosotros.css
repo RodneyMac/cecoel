@@ -108,6 +108,23 @@ li .nav-item {
   color: var(--color-gray-2);
 }
 
+@media (max-width: 768px) {
+  .us {
+    flex-direction: column;
+    padding: 10px 10px;
+    margin: 0 auto;
+  }
+
+  .record {
+    max-width: 100%;
+    margin-top: 100px;
+  }
+
+  .us-container {
+    padding: 0 0 0 0;
+  }
+}
+
 /* ---------- US BOARD OF DIRECTORS ---------- */
 
 .us-board-of-directors {
@@ -145,6 +162,18 @@ li .nav-item {
 
 .board-of-directors-img {
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .us-board-of-directors-header-subtitle {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+  
+  .board-of-directors-img {
+    width: 100%;
+    max-width: 639px;
+  }
 }
 
 /* ---------- US STAFF ---------- */
