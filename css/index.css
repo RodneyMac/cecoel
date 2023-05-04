@@ -154,6 +154,19 @@ li .nav-item {
 @media (max-width: 1000px) {
   .section-2 {
     justify-content: center;
+    padding: 0px 0px;
+  }
+
+  .section-2-left {
+    max-width: 100%;
+  }
+
+  .section-2-left-title {
+    margin-top: 20px;
+  }
+
+  .section-2-left-content {
+    margin: 10px 0 30px 0;
   }
 
   .section-2-btn {
@@ -168,10 +181,6 @@ li .nav-item {
 }
 
 @media (max-width: 650px) {
-  .section-2 {
-    padding: 40px 60px;
-  }
-
   .section-2-left {
     display: flex;
     flex-direction: column;
@@ -187,7 +196,6 @@ li .nav-item {
   .section-2-left-content {
     font-size: 18px;
     text-align: center;
-    margin: 20px 0 30px 0;
   }
 
   .section-2-btn {
@@ -420,6 +428,26 @@ li .nav-item {
   color: var(--color-white);
 }
 
+@media (max-width: 1000px) {
+  .section-4-box {
+    padding: 40px 20px;
+  }
+
+  .section-4-box-title {
+    margin-bottom: 20px;
+  }
+
+  .section-4-box-description {
+    margin: 20px 0;
+  }
+
+  .section-4-box-btn {
+    margin-top: 40px;
+    padding: 15px 40px;
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 650px) {
   .section-4-parallax {
     background-image: url(../img/Nosotros.png);
@@ -448,16 +476,12 @@ li .nav-item {
     align-items: center;
     margin: 0 auto;
   }
-
-  .section-4-box-btn {
-    padding: 0 8px;
-  }
 }
 
 /* ---------- SECTION 5 ---------- */
 
 .section-5 {
-  margin-top: 150px;
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -645,6 +669,16 @@ footer {
   width: 100px;
   height: 100px;
   margin: 10px 0;
+}
+
+@media (max-width: 1000px) {
+  .footer-address,
+  .footer-contact,
+  .footer-schedule,
+  .footer-social-networks {
+    height: 150px;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 766px) {
